@@ -172,7 +172,7 @@ test_data <- sel_data[-train_index, ]
 
 ################################################################################
 
-# Normalize numerical features
+# Normalise numerical features
 preprocess <- preProcess(train_data[, -1], method = c("center", "scale"))
 
 train_data_normalized <- train_data
@@ -307,7 +307,7 @@ train_index_2 <- createDataPartition(sel_data_2$songs.popularity, p = 0.8, list 
 train_data_2 <- sel_data_2[train_index_2, ]
 test_data_2 <- sel_data_2[-train_index_2, ]
 
-# Normalize numerical features
+# Normalise numerical features
 preprocess_2 <- preProcess(train_data_2[, -1], method = c("center", "scale"))
 
 train_data_normalized_2 <- train_data_2
@@ -367,7 +367,7 @@ cat("XGBoost RMSE:", xgb_reg_rmse, "\n")
 # XGBoost RMSE: 14.47437
 
 
-#Visualize Predictions
+#Visualise Predictions
 results <- data.frame(
   Actual = test_data_normalized_2$songs.popularity,
   Linear_Regression = linear_preds,
