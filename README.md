@@ -27,21 +27,6 @@ The MusicOset dataset (2008-2018) was used for this project. It includes:
 - song_popularity_analysis.R: Main script for data preprocessing, EDA, machine learning modelling, and visualisation.
 - README.md: Documentation for the project (this file).
 
-## Key Features of the Script
-1. Data Preprocessing:
-- Merge file using MS Excel.
-- Normalisation of features.
-- Splitting data into training and testing sets.
-2. Exploratory Data Analysis:
-- Correlation heatmap for audio features.
-- Box plots for comparing feature distributions.
-3. Modeling:
-- Classification models: Logistic Regression, Random Forest, XGBoost.
-- Regression models: Linear Regression, Random Forest Regression, XGBoost Regression.
-4. Model validation:
-- Actual vs. Predicted plots for regression.
-- Feature importance for Random Forest and XGBoost models.
-
 ## Getting Started
 1. Clone the repository:
 bash
